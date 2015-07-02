@@ -1,67 +1,106 @@
-html > * {
+html>* {
 	font-family: Arial;
-	margin:0px;
-	padding:0px;
+	margin: 0px;
+	padding: 0px;
 }
-body{
-	margin:0px 10%;
+
+body {
+	margin: 0px 20%;
 }
-body.page header{
-	background-color:#000;
-	color:#fff;
-	padding:10px 	20px;
-	margin-bottom:10px;
+
+body.page header {
+	background-color: #000;
+	color: #fff;
+	padding: 10px 20px;
+	margin-bottom: 10px;
 	box-shadow: 0px 4px 12px #333;
 }
 
-body.page header img.logo{
-	float:right;
-	padding:5px;
-	margin:5px;
+body.page header img.logo {
+	float: right;
+	padding: 5px;
+	margin: 5px;
 }
+
 body.page section {
-	background-color:#fff;
-	color:#000;
+	background-color: #fff;
+	color: #000;
 }
-body.page section article{
-	margin:10px 20px;
-	padding:10px;
-	border-top:none;
+
+
+body.page section article {
+	margin: 10px 20px;
+	padding: 10px;
+	padding-top:2em;
+	border-bottom: 1px dotted #777;
+	margin-bottom: -10px;
 }
-body.page section article ul.screenshots li{
-	text-align:center;
+body.page section article:FIRST-CHILD {
+	padding: 10px;
 }
-body.page section article ul.screenshots li{
-	display:inline-block;
+
+body.page section article div.screenshots{
+	padding: 20px;
+}
+body.page section article div.screenshots ul {
+	text-align: center;
 	list-style: none;
 }
-body.page section article ul.screenshots li a img{
-	width:240px;
+
+body.page section article div.screenshots ul li {
+	
 }
-body.page section article p{
-	margin:0px;
-	padding:5px;
+
+body.page section article div.screenshots ul li {
+	display: inline-block;
 }
-body.page section article code{
-	float:right;
+
+body.page section article div.screenshots ul li a img {
+	width: 240px;
 }
-body.page section article:last-child{
-	border-top:1px dotted #777;
+
+body.page section article p {
+	margin: 0px;
+	padding: 5px;
 }
+
+body.page section article div.tags {
+	float: right;
+	display: inline;
+}
+
+body.page section article div.author {
+	float: left;
+	font: 11pt monospace;
+	background-color: #000;
+	color: #fff;
+	padding: 2px 4px;
+	margin-right: 4px;
+}
+
+body.page section article div.tags span {
+	background-color: #000;
+	color: #fff;
+	padding: 2px 4px;
+	margin-left: 4px;
+	font: 10pt monospace;
+}
+
 body.page footer {
-	position:absolute;
-	text-align:center;
-	display:block;
+	position: absolute;
+	text-align: center;
+	display: block;
 	height: 32px;
-	width:80%;
-	bottom:0px;
-	padding:10px;
-	background-color:#000;
-	color:#fff;
-	box-shadow:0px 4px -12px #333;
+	width: 60%;
+	bottom: 0px;
+	padding: 10px;
+	background-color: #000;
+	color: #fff;
+	box-shadow: 0px 4px -12px #333;
 }
-body.page footer a{
-	background-color:#000;
-	color:#fff;
-	border-bottom:1px dotted #ddd;
+
+body.page footer a {
+	background-color: #000;
+	color: #fff;
+	border-bottom: 1px dotted #ddd;
 }
