@@ -6,6 +6,7 @@ html>* {
 
 body {
 	margin: 0px 20%;
+	min-width:800px;
 }
 
 body.page header {
@@ -23,6 +24,24 @@ body.page header img.logo {
 	margin: 5px;
 }
 
+body.page header nav ul{
+	list-style: none;
+}
+body.page header nav ul li{
+	display:inline-block;
+}
+body.page header nav ul li a{
+	display:block;
+	margin:4px 2px;
+	padding: 4px 8px;
+ 	color:#000;
+	text-decoration:none;
+	border-radius:8px;
+	background-color:#ddd;
+}
+body.page header nav ul li a:before{
+	content:" » ";
+}
 body.page section {
 	background-color: #fff;
 	color: #000;
@@ -35,6 +54,10 @@ body.page section article {
 	padding-top:2em;
 	border-bottom: 1px dotted #777;
 	margin-bottom: -10px;
+}
+
+body.page section article:last-child {
+	margin-bottom:60px;
 }
 body.page section article:FIRST-CHILD {
 	padding: 10px;
@@ -59,10 +82,23 @@ body.page section article div.screenshots ul li {
 body.page section article div.screenshots ul li a img {
 	width: 240px;
 }
-
+body.page section article h1 {
+	font-size:24pt;
+	vertical-align: middle;
+}
+body.page section article h1 span {
+	background-color:#333;
+	margin: 0px 10px 0px 0px;
+	border-radius: 20px ;
+	padding:8px;
+	font-size:11pt;
+	color:#fff;
+	vertical-align: middle;
+}
 body.page section article p {
 	margin: 0px;
-	padding: 5px;
+	padding:10px;
+	padding-left: 20px;
 }
 
 body.page section article div.tags {
@@ -93,6 +129,7 @@ body.page footer {
 	display: block;
 	height: 32px;
 	width: 60%;
+	min-width:900px;
 	bottom: 0px;
 	padding: 10px;
 	background-color: #000;

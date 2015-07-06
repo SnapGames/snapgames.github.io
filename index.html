@@ -2,84 +2,143 @@
 <html>
 
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>SnapGames</title>
-<link rel="stylesheet" type="text/css" href="./css/main.css">
-<link rel="icon" href="images/icons/platformer.ico" />
-<link rel="icon" type="image/png" href="images/icons/platformer.png" />
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>SnapGames</title>
+	<link rel="stylesheet" type="text/css" href="./css/main.css">
+	<link rel="icon" href="images/icons/platformer.ico" />
+	<link rel="icon" type="image/png" href="images/icons/platformer.png" />
 </head>
 
 <body class="page">
 	<header id="header" class="">
 		<img class="logo" src="images/icons/platformer.png"
-			alt="logo SnapGames which is a pixelized tilemap" />
+		alt="logo SnapGames which is a pixelized tilemap" />
 		<h1>#SnapGames</h1>
+		<h2>Blog</h2>
+		<nav>
+			<ul>
+				<li><a href="./index.html" title="">Blog</a></li>
+				<li><a href="./features/index.html" title="">Doc</a></li>
+			</ul>
+		</nav>
 	</header>
 	<!-- /header -->
 	<section id="page">
+		<!--<article id="a_3">
+			<h1><span>no</span>title</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+			<div class="author">McGivrer, @2015JULY06</div>
+			<div class="tags">
+				<span>#gameengine</span> <span>#tools</span> <span>#editor</span>
+			</div>
+		</article>-->
+		<article id="a_3">
+			<h1><span>03</span>TileMap Editor (and more...)</h1>
+			<p>I've juste started th development of the Tool side. I first work on the Level editor, mainly a TileMap editor, as a start point. It would provide Tilemap editor feature (sic), TileSet autosliced, and some Layer feature, largely inspired from <a href="http://www.mapeditor.org/" title="Open the official Tiled web site">Tile</a>.
+			</p>
+
+			<div class="screenshots">
+				<ul>
+					<li><a href="images/tools/platform2d-tilemapeditor.png"
+						title="The first draft of the TileMap Editor"> <img
+						src="images/tools/platform2d-tilemapeditor.png"
+						alt="The first draft of the TileMap Editor">
+					</a></li>
+				</ul>
+			</div>
+
+			<p>The Editor will be based on Java SWT eclipse library.</p>
+			<p>Bellow a small capabilities list, that would be ilplemented in a next release:</p>
+			<ol>
+				<li>Editors</li>
+				<ol>
+					<li>Meta-data editor</li>
+					<li>Level</li>
+					<li>TileSet</li>
+					<li>TileMap</li>
+					<ol>
+						<li>TileSet list</li>
+						<li>Layers list</li>
+						<li>MapObjects hierarchical list</li>
+						<li>Object meta-data template</li>
+					</ol>
+				</ol>
+				<li><a href="./features/index.html" title="">more to come</a>  ...</li>
+			</ol>
+			<div class="author">McGivrer, @2015JULY06</div>
+			<div class="tags">
+				<span>#gameengine</span> <span>#tools</span> <span>#editor</span>
+			</div>
+		</article>
 		<article id="a_2">
-			<h1>Platform 2D</h1>
+			<h1><span>02</span>Platform 2D</h1>
 			<p>
 				Platform is a 2D Game Engine attempts. based on the fabulous
 				tutorials from the <a
-					href="https://plus.google.com/+ForeignGuyMike/posts"
-					title="Visit his Google+ profile">ForeignGuyMike</a> from <a
-					href="https://www.youtube.com/user/ForeignGuyMike/playlists"
-					title="browse his tutorials playlist">youtube</a>
+				href="https://plus.google.com/+ForeignGuyMike/posts"
+				title="Visit his Google+ profile">ForeignGuyMike</a> from <a
+				href="https://www.youtube.com/user/ForeignGuyMike/playlists"
+				title="browse his tutorials playlist">youtube</a>
 			</p>
 			<p>The SnapGames Dev Team deal was to create a 2d game platform
 				from this work, and provide a fun tooling to develop old school like
 				games.</p>
-			<p>The first try is for the Artifact ForeignGuyMike demo game.
-				Totally rewritten based on the SnapGames Platform 2D engine,
-				Artifact is .. the same :)</p>
-			<p>But build with a nice reusable in-house game engine.</p>
-			<div class="screenshots">
-				<ul>
-					<li><a href="images/screenshots/artifact-menu.png"
-						title="Artifact remastered, menu screen"> <img
-							src="images/screenshots/artifact-menu.png"
-							alt="Artifact remastered, menu screen">
-					</a></li>
-					<li><a href="images/screenshots/artifact-options.png"
-						title="Artifact remastered, options screen"> <img
-							src="images/screenshots/artifact-options.png"
-							alt="Artifact remastered, options screen">
-					</a></li>
-					<li><a href="images/screenshots/artifact-level1.png"
-						title="Artifact remastered, level 1 action screenshot"><img
-							src="images/screenshots/artifact-level1.png"
-							alt="Artifact remastered, level 1 action screenshot"></a></li>
-				</ul>
-			</div>
-			<div class="author">McGivrer, @2015JULY01</div>
-			<div class="tags">
-				<span>#snapgames</span> <span>#platform</span> <span>#2d</span> <span>#gameengine</span>
-				<span>#tools</span> <span>#editor</span>
-			</div>
-		</article>
-		<article id="a_1">
-			<h1>Welcome !</h1>
-			<p>Welcome to the early birds SnapGames web site.</p>
-			<p>Our very skilled Dev team (aka myself ;) is pleased to
-				announce the birth of the brand "SnapGames" with, soon, some
-				beautiful "old school" games.</p>
-			<p>If your are a Pixel lover, you will soon appreciate the
-				Platform2D GameEngine, our internal framework with some tooling,
-				ready to run beautiful "sepia" games.</p>
-			<p>We are working hard at preparing some good tools to design World, Level, Map and Tiles !</p>
-			<div class="author">McGivrer, @2015JULY01</div>
-			<div class="tags">
-				<span>#new</span> <span>#snapgames</span>
-			</div>
-		</article>
-	</section>
-	<footer>
-		&copy; 2015 - <a href="http://snapgames.github.io/">SnapGames</a> - <a
-			href="mailto:contact@web-context.com?subject=SnapGames/platform 2D game engine"
-			title="send a mail to SnapGames Team">Contact</a>
-	</footer>
-</body>
+				<p>The first try is for the Artifact ForeignGuyMike demo game.
+					Totally rewritten based on the SnapGames Platform 2D engine,
+					Artifact is .. the same :)</p>
+					<p>But build with a nice reusable in-house game engine.</p>
+					<div class="screenshots">
+						<ul>
+							<li><a href="images/screenshots/artifact-menu.png"
+								title="Artifact remastered, menu screen"> <img
+								src="images/screenshots/artifact-menu.png"
+								alt="Artifact remastered, menu screen">
+							</a></li>
+							<li><a href="images/screenshots/artifact-options.png"
+								title="Artifact remastered, options screen"> <img
+								src="images/screenshots/artifact-options.png"
+								alt="Artifact remastered, options screen">
+							</a></li>
+							<li><a href="images/screenshots/artifact-level1.png"
+								title="Artifact remastered, level 1 action screenshot"><img
+								src="images/screenshots/artifact-level1.png"
+								alt="Artifact remastered, level 1 action screenshot"></a></li>
+							</ul>
+						</div>
+						<div class="author">McGivrer, @2015JULY01</div>
+						<div class="tags">
+							<span>#snapgames</span> <span>#platform</span> <span>#2d</span> <span>#gameengine</span>
+							<span>#tools</span> <span>#editor</span>
+						</div>
+					</article>
+					<article id="a_1">
+						<h1><span>02</span>Welcome !</h1>
+						<p>Welcome to the early birds SnapGames web site.</p>
+						<p>Our very skilled Dev team (aka myself ;) is pleased to
+							announce the birth of the brand "SnapGames" with, soon, some
+							beautiful "old school" games.</p>
+							<p>If your are a Pixel lover, you will soon appreciate the
+								Platform2D GameEngine, our internal framework with some tooling,
+								ready to run beautiful "sepia" games.</p>
+								<p>We are working hard at preparing some good tools to design World, Level, Map and Tiles !</p>
+								<div class="author">McGivrer, @2015JULY01</div>
+								<div class="tags">
+									<span>#new</span> <span>#snapgames</span>
+								</div>
+							</article>
+						</section>
+						<footer>
+							&copy; 2015 - <a href="http://snapgames.github.io/">SnapGames</a> - <a
+							href="mailto:contact@web-context.com?subject=SnapGames/platform 2D game engine"
+							title="send a mail to SnapGames Team">Contact</a>
+						</footer>
+					</body>
 
-</html>
+					</html>
