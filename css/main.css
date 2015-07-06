@@ -14,6 +14,7 @@ body.page header {
 	padding: 10px 20px;
 	margin-bottom: 10px;
 	box-shadow: 0px 4px 12px #333;
+	border-radius: 0px 0px 8px 8px;
 }
 
 body.page header img.logo {
@@ -87,7 +88,7 @@ body.page section article div.tags span {
 }
 
 body.page footer {
-	position: absolute;
+	position: fixed;
 	text-align: center;
 	display: block;
 	height: 32px;
@@ -97,10 +98,12 @@ body.page footer {
 	background-color: #000;
 	color: #fff;
 	box-shadow: 0px 4px -12px #333;
+	border-radius: 8px 8px 0px 0px;
 }
 
 body.page footer a {
 	background-color: #000;
 	color: #fff;
 	border-bottom: 1px dotted #ddd;
+	text-decoration: none;
 }
