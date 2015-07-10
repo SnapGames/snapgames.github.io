@@ -7,6 +7,7 @@ html>* {
 body {
 	margin: 0px 20%;
 	min-width: 800px;
+   counter-reset: figs;
 }
 
 body.page header {
@@ -88,29 +89,53 @@ body.page section article:first-child {
 	padding: 10px;
 }
 
-body.page section article img.screenshot {
-	padding: 0px;
+body.page section article figure {
 	margin: 1em 35%;
-	width: 320px;
+	text-align: center;
+	border:1px dotted #ddd;
+	padding:1em;
+}
+body.page section article figure.landscape {
+	margin: 1em 20%;
+}
+
+body.page section article figure figcaption {
+	font-size:0.8em;
+	border-top:1px dotted #ddd;
+	margin-top:1em;
+	padding-top:0.5em;
+	text-align: center;
+	color:#666;
+}
+body.page section article figure figcaption:before {
+	counter-increment: figs;
+	content: "figure " counter(figs) " - ";
+}
+body.page section article figure img.screenshot {
+	padding: 0px;
+	margin:0px;
+	width: 400px;
 	box-shadow: 4px 4px 8px #333;
+}
+body.page section article figure.console {
+	margin: 1em 10%;
 	text-align: center;
 }
 
-body.page section article pre.console {
+body.page section article figure.console pre {
 	border: 1px solid darkgreen;
 	background-color: black;
 	color: lightgreen;
 	padding: 1em;
-	margin: 1em;
+	margin: 1em 0em;
 	border-radius: 4px;
-	width: 60%;
 	font-size: 12pt;
+	text-align: left;
 }
 
 body.page section article blockquote {
-	float: left;
+	margin: 6em 3em;
 	padding: 1em;
-	margin: 1em;
 	background-color: #f2f2f2;
 	border-radius: 4px;
 	width: 40%;
@@ -120,7 +145,7 @@ body.page section article blockquote {
 blockquote.warning {
 	background-image: url("../images/icons/warning-48x48.png");
 	background-repeat: no-repeat;
-	background-position: 8px 8px;
+	background-position: 1em 1em;
 	background-color: #333;
 }
 
@@ -159,19 +184,21 @@ body.page section article code:hover {
 }
 
 body.page section article div.screenshots {
-	padding: 20px;
+	padding:0px;
 }
 
 body.page section article div.screenshots ul {
-	text-align: center;
 	list-style: none;
+	padding:0px;
 }
 
 body.page section article div.screenshots ul li {
+	padding:0px;
 }
 
 body.page section article div.screenshots ul li {
 	display: inline-block;
+	padding:0px;
 }
 
 body.page section article div.screenshots ul li a img {
@@ -203,8 +230,8 @@ body.page section article h1 span {
 
 body.page section article p {
 	margin: 0px;
-	padding: 10px;
-	padding-left: 20px;
+	padding: 5px;
+	/*padding-left: 20px;*/
 	padding-right: 0px;
 	margin-right: 1em;
 }
