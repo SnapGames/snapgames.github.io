@@ -6,10 +6,14 @@ html>* {
 
 body {
 	margin: 0px 20%;
-	min-width:800px;
+	min-width: 800px;
 }
 
 body.page header {
+	position: fixed;
+	top: 0px;
+	width: 60%;
+	min-width: 800px;
 	background-color: #000;
 	color: #fff;
 	padding: 10px 20px;
@@ -22,72 +26,148 @@ body.page header h1,
 body.page header h2,
 body.page header h3 {
 	margin-right: 20px;
-	display:inline;
+	display: inline;
 }
+
 body.page header img.logo {
 	float: right;
 	padding: 5px;
 	margin: 5px;
 }
 
-body.page header nav ul{
+body.page header nav ul {
 	list-style: none;
-	margin:0px;
-	padding:0px;
-	margin-top:10px;
+	margin: 0px;
+	padding: 0px;
+	margin-top: 10px;
 }
-body.page header nav ul li{
-	display:inline-block;
+
+body.page header nav ul li {
+	display: inline-block;
 }
-body.page header nav ul li a{
-	display:block;
-	margin:4px 2px;
+
+body.page header nav ul li a {
+	display: block;
+	margin: 4px 2px;
 	padding: 4px 8px;
-	padding-right:20px;
-	min-width:60px;
- 	color:#000;
-	text-decoration:none;
-	border-radius:2px 4px 2px 4px ;
-	background-color:#ddd;
+	padding-right: 20px;
+	min-width: 60px;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 2px 4px 2px 4px;
+	background-color: #666;
 }
-body.page header nav ul li a:before{
-	content:" » ";
+
+body.page header nav ul li a:before {
+	content: " » ";
 }
-body.page header nav ul li a.selected{
-	background-color:#999;
-	color:white;
-}
-body.page section {
+
+body.page header nav ul li a.selected {
 	background-color: #fff;
 	color: #000;
 }
 
+body.page section {
+	background-color: #fff;
+	color: #000;
+	margin-top: 5em;
+	margin-bottom: 10em;
+}
 
 body.page section article {
-	margin: 10px 20px;
-	padding: 10px;
-	padding-top:2em;
-	border-bottom: 1px dotted #777;
-	margin-bottom: -10px;
+	margin: 10px 20px;	/*padding: 10px;*/
+	padding-top: 2em;
+	border-bottom: 1px dotted #777;	/*border-left:1px dotted #777;*/
 }
 
 body.page section article:last-child {
-	margin-bottom:60px;
+	margin-bottom: 60px;
 }
-body.page section article:FIRST-CHILD {
+
+body.page section article:first-child {
 	padding: 10px;
 }
 
-body.page section article div.screenshots{
+body.page section article img.screenshot {
+	padding: 0px;
+	margin: 1em 35%;
+	width: 320px;
+	box-shadow: 4px 4px 8px #333;
+	text-align: center;
+}
+
+body.page section article pre.console {
+	border: 1px solid darkgreen;
+	background-color: black;
+	color: lightgreen;
+	padding: 1em;
+	margin: 1em;
+	border-radius: 4px;
+	width: 60%;
+	font-size: 12pt;
+}
+
+body.page section article blockquote {
+	float: left;
+	padding: 1em;
+	margin: 1em;
+	background-color: #f2f2f2;
+	border-radius: 4px;
+	width: 40%;
+	box-shadow: 4px 4px 8px #000;
+}
+
+blockquote.warning {
+	background-image: url("../images/icons/warning-48x48.png");
+	background-repeat: no-repeat;
+	background-position: 8px 8px;
+	background-color: #333;
+}
+
+body.page section article blockquote p {
+	text-align: justify;
+	margin: 0px;
+	padding: 4px;
+	margin-left: 60px;
+}
+
+body.page section article blockquote h1 {
+	margin: 0px;
+	padding: 4px;
+	margin-left: 60px;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	font-size: 12pt;
+	font-weight: bold;
+	border-bottom: 1px solid #000;
+}
+
+body.page section article code {
+	padding: 2px 8px;
+	margin: 0px 4px;
+	box-shadow: 2px 2px 4px #333, -2px -2px 6px #eee;
+	line-height: 2em;
+	font-variant: small-caps;
+	border-radius: 4px;
+	background-color: #eee;
+	color: #333;
+}
+
+body.page section article code:hover {
+	box-shadow: 2px 2px 4px #fff, -2px -2px 4px #333;
+	cursor: crosshair;
+}
+
+body.page section article div.screenshots {
 	padding: 20px;
 }
+
 body.page section article div.screenshots ul {
 	text-align: center;
 	list-style: none;
 }
 
 body.page section article div.screenshots ul li {
-	
 }
 
 body.page section article div.screenshots ul li {
@@ -97,36 +177,46 @@ body.page section article div.screenshots ul li {
 body.page section article div.screenshots ul li a img {
 	width: 240px;
 }
+
 body.page section article div.screenshots ul li a img.medium {
 	width: 320px;
 }
+
 body.page section article h1 {
-	font-size:24pt;
-	vertical-align: middle;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-right: 0px;
+	font-size: 24pt;
+	border-bottom: 1px dotted #000;
 }
+
 body.page section article h1 span {
-	background-color:#333;
-	margin: 0px 10px 0px 0px;
-	border-radius: 20px ;
-	padding:8px;
-	font-size:11pt;
-	color:#fff;
-	vertical-align: middle;
+	float: right;
+	margin: 0px;
+	background-color: #333;
+	border-radius: 20px;
+	padding: 8px;
+	font-size: 11pt;
+	color: #fff;
+	margin-top: 20px;
 }
+
 body.page section article p {
 	margin: 0px;
-	padding:10px;
+	padding: 10px;
 	padding-left: 20px;
+	padding-right: 0px;
+	margin-right: 1em;
 }
 
 body.page section article div.tags {
 	float: right;
 	display: inline;
+	margin-right: 2em;
 }
 
 body.page section article div.author {
 	float: left;
-	font: 11pt monospace;
 	background-color: #000;
 	color: #fff;
 	padding: 2px 4px;
@@ -147,12 +237,12 @@ body.page footer {
 	display: block;
 	height: 32px;
 	width: 60%;
-	min-width:800px;
+	min-width: 800px;
 	bottom: 0px;
 	padding: 10px;
 	background-color: #000;
 	color: #fff;
-	box-shadow: 0px 4px -12px #333;
+	box-shadow: 0px -40px 60px rgba(255, 255, 255, 0.6);
 	border-radius: 8px 8px 0px 0px;
 }
 
@@ -161,4 +251,8 @@ body.page footer a {
 	color: #fff;
 	border-bottom: 1px dotted #ddd;
 	text-decoration: none;
+}
+
+.clear {
+	clear: both;
 }
