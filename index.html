@@ -1,187 +1,38 @@
 <!DOCTYPE html>
-<html>
-
-<head>
+<html ng-app="snapgames">
+	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>SnapGames</title>
 	<link rel="stylesheet" type="text/css" href="./css/main.css">
 	<link rel="icon" href="images/icons/platformer.ico" />
 	<link rel="icon" type="image/png" href="images/icons/platformer.png" />
-</head>
-
-<body class="page">
-	<header id="header" class="">
-		<img class="logo" src="images/icons/platformer.png"
-		alt="logo SnapGames which is a pixelized tilemap" />
-		<h1>#SnapGames</h1>
-		<h2>Blog</h2>
-		<nav>
-			<ul>
-				<li><a class="selected" href="./index.html" title="goto blog lines">Blog</a></li>
-				<li><a href="#/features/index.html" title="Coming soon !">Doc</a></li>
-				<li><a href="#/download.html" title="Coming soon !">Download</a></li>
-			</ul>
-		</nav>
-	</header>
-	<!-- /header -->
-	<section id="page">
-		<!--<article id="a_3">
-			<h1><span>no</span>title</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			</p>
-			<div class="author">McGivrer, @2015JULY06</div>
-			<div class="tags">
-				<span>#gameengine</span> <span>#tools</span> <span>#editor</span>
-			</div>
-		</article>-->
-		<article id="a_4">
-			<h1><span>04</span>A first beta download ?</h1>
-			<p>As discussed a few days ago, my work start over the tutoiral from the ForeignGuyMike with it's "Artifact" game.</p>
-			<p>Please, try to download my remastered version , build upon my own (in house) game engine, which is a Work In Progress piece of code.</p>
-			<p>If you want to test it, just click the screenshot bellow to start download the zip file.</p>
-			<figure>
-				<a href="downloads/artifact-0.0.2.zip" title="click to download">
-					<img class="screenshot" src="images/screenshots/artifact-level1.png" alt="Artifact remastered, click to download !">
-				</a>
-				<figcaption>Artifact remastered, click to download !</figcaption>
-			</figure>
-			<p>Unzip this to a new path (e.g.: /artifact), and double click the jar file to start the game.</p>
-			<figure>
-				<img src="images/captures/artifact-capture-2.png" alt="the jar file to be executed">
-				<figcaption>This is the downloaded JAR file to be executed !</figcaption>
-			</figure>
-
-			<p>Or if this does not work, you shall execute the following command line</p>
-			<p>on linux / MacOS X / Windows:</p>
-			<figure class="console">
-				<pre>$&gt; java -jar artifact-remastered-0.0.2-SNAPSHOT.jar</pre>
-				<figcaption>start execution on command line for Artifact game</figcaption>
-			</figure>
-			<p>To play, use <code title="Up arrow">UP</code>, <code title="Down arrow">DOWN</code>, <code title="Left arrow">LEFT</code>, <code title="Right arrow">RIGHT</code> keys and <code>W</code> to jump, <code>X</code> to run, <code>C</code> to fire magic balls. and finally <code>ESC</code> to pause and/or exit game.</p>
-
-			<blockquote class="warning">
-				<h1>Warning</h1>
-				<p>To execute this beta version, you will need of brand new <a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html" title="download JDK 8 from oracle site" target="_blank">JDK 8 from oracle</a>. In some next release, compatibility will be rewind to Java 6.</p>
-			</blockquote>
-			<div class="clear"></div>
-
-			<div class="author">McGivrer, @2015JULY06</div>
-			<div class="tags">
-				<span>#gameengine</span> <span>#artifact</span> <span>#core</span>
-			</div>
-		</article>
-		<article id="a_3">
-			<h1><span>03</span>TileMap Editor (and more...)</h1>
-			<p>I've juste started th development of the Tool side. I first work on the Level editor, mainly a TileMap editor, as a start point. 
-			It would provide Tilemap editor feature (sic), TileSet autosliced, and some Layer feature, largely inspired 
-			from <a href="http://www.mapeditor.org/" title="Open the official Tiled web site">Tiled</a>.
-			</p>
-			<figure>
-				<div class="screenshots">
-					<ul>
-						<li><a href="images/tools/platform2d-tilemapeditor.png"
-							title="The first draft of the TileMap Editor"> <img class="medium"
-							src="images/tools/platform2d-tilemapeditor.png"
-							alt="The first draft of the TileMap Editor">
-						</a></li>
-					</ul>
-				</div>
-				<figcaption>Sceenshot of the prototype of the game editor</figcaption>
-			</figure>
-
-			<p>The Editor will be based on Java SWT eclipse library.</p>
-			<p>Bellow a small capabilities list, that would be ilplemented in a next release:</p>
-			<ol>
-				<li>Editors</li>
-				<ol>
-					<li>Meta-data editor</li>
-					<li>Level</li>
-					<li>TileSet</li>
-					<li>TileMap</li>
-					<ol>
-						<li>TileSet list</li>
-						<li>Layers list</li>
-						<li>MapObjects hierarchical list</li>
-						<li>Object meta-data template</li>
-					</ol>
-				</ol>
-				<li><a href="./features/index.html" title="">more to come</a>  ...</li>
-			</ol>
-			<div class="author">McGivrer, @2015JULY06</div>
-			<div class="tags">
-				<span>#gameengine</span> <span>#tools</span> <span>#editor</span>
-			</div>
-		</article>
-		<article id="a_2">
-			<h1><span>02</span>Platform 2D</h1>
-			<p>
-				Platform is a 2D Game Engine attempts. based on the fabulous
-				tutorials from the <a
-				href="https://plus.google.com/+ForeignGuyMike/posts"
-				title="Visit his Google+ profile">ForeignGuyMike</a> from <a
-				href="https://www.youtube.com/user/ForeignGuyMike/playlists"
-				title="browse his tutorials playlist">youtube</a>
-			</p>
-			<p>The SnapGames Dev Team deal was to create a 2d game platform
-				from this work, and provide a fun tooling to develop old school like
-				games.</p>
-				<p>The first try is for the Artifact ForeignGuyMike demo game.
-					Totally rewritten based on the SnapGames Platform 2D engine,
-					Artifact is .. the same :)</p>
-					<p>But build with a nice reusable in-house game engine.</p>
-					<figure class="landscape">
-					<div class="screenshots">
-						<ul>
-							<li><a href="images/screenshots/artifact-menu.png"
-								title="Artifact remastered, menu screen"> <img
-								src="images/screenshots/artifact-menu.png"
-								alt="Artifact remastered, menu screen">
-							</a></li>
-							<li><a href="images/screenshots/artifact-options.png"
-								title="Artifact remastered, options screen"> <img
-								src="images/screenshots/artifact-options.png"
-								alt="Artifact remastered, options screen">
-							</a></li>
-							<li><a href="images/screenshots/artifact-level1.png"
-								title="Artifact remastered, level 1 action screenshot"><img
-								src="images/screenshots/artifact-level1.png"
-								alt="Artifact remastered, level 1 action screenshot"></a></li>
-						</ul>
-					</div>
-					<figcaption>Sceenshot from the remastered Artifact tutorial game</figcaption>
-					</figure>
-				<div class="author">McGivrer, @2015JULY01</div>
-				<div class="tags">
-					<span>#snapgames</span> <span>#platform</span> <span>#2d</span> <span>#gameengine</span>
-					<span>#tools</span> <span>#editor</span>
-				</div>
-			</article>
-			<article id="a_1">
-				<h1><span>01</span>Welcome !</h1>
-				<p>Welcome to the early birds SnapGames web site.</p>
-				<p>Our very skilled Dev team (aka myself ;) is pleased to
-				announce the birth of the brand "SnapGames" with, soon, some
-				beautiful "old school" games.</p>
-				<p>If your are a Pixel lover, you will soon appreciate the
-				Platform2D GameEngine, our internal framework with some tooling,
-				ready to run beautiful "sepia" games.</p>
-				<p>We are working hard at preparing some good tools to design World, Level, Map and Tiles !</p>
-				<div class="author">McGivrer, @2015JULY01</div>
-				<div class="tags">
-					<span>#new</span> <span>#snapgames</span>
-				</div>
-			</article>
+	</head>
+	<body class="page" ng-controller="HomeController">
+		<header id="header" class="">
+			<img class="logo" src="images/icons/platformer.png"
+			alt="logo SnapGames which is a pixelized tilemap" />
+			<h1>#SnapGames</h1>
+			<h2>Blog</h2>
+			<nav>
+				<ul>
+					<li><a id="page_home" class="selected" href="#/" title="goto blog lines">Blog</a></li>
+					<li><a id="page_doc" href="#/features" title="Accessible doc">Doc</a></li>
+					<li><a id="page_download" href="#/download" title="Click to download the latest version">Download</a></li>
+				</ul>
+			</nav>
+		</header>
+		<!-- /header -->
+		<section id="page" ng-view>
+			
 		</section>
 		<footer>
 			&copy; 2015 - <a href="http://snapgames.github.io/">SnapGames</a> - <a
 			href="mailto:contact@web-context.com?subject=SnapGames/platform 2D game engine"
 			title="send a mail to SnapGames Team">Contact</a>
 		</footer>
-</body>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.min.js" type="text/javascript"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular-route.min.js" type="text/javascript"></script>
+		<script src="js/app.js" type="text/javascript"></script>
+	</body>
 </html>
