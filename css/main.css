@@ -90,12 +90,15 @@ body.page section article:first-child {
 }
 
 body.page section article figure {
-	margin: 1em 35%;
+    display:block;
+	margin: 1em 20%;
 	text-align: center;
 	border:1px dotted #ddd;
+    width:400px;
 	padding:1em;
 }
 body.page section article figure.landscape {
+    display:block;
 	margin: 1em 20%;
 }
 
@@ -112,6 +115,7 @@ body.page section article figure figcaption:before {
 	content: "figure " counter(figs) " - ";
 }
 body.page section article figure img.screenshot {
+    display:block;
 	padding: 0px;
 	margin:0px;
 	width: 400px;
@@ -119,6 +123,7 @@ body.page section article figure img.screenshot {
 }
 body.page section article figure.console {
 	margin: 1em 10%;
+    width:80%;
 	text-align: center;
 }
 
@@ -138,7 +143,7 @@ body.page section article blockquote {
 	padding: 1em;
 	background-color: #f2f2f2;
 	border-radius: 4px;
-	width: 40%;
+	width: 60%;
 	box-shadow: 4px 4px 8px #000;
 }
 
