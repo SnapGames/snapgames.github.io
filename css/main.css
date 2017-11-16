@@ -5,16 +5,16 @@ html>* {
 }
 
 body {
-	margin: 0px 20%;
-	min-width: 800px;
+	margin: 0px 5%;
+	min-width: 1024px;
    counter-reset: figs;
 }
 
 body.page header {
 	position: fixed;
 	top: 0px;
-	width: 60%;
-	min-width: 800px;
+	width: 90%;
+	min-width: 1024px;
 	background-color: #000;
 	color: #fff;
 	padding: 10px 20px;
@@ -34,6 +34,13 @@ body.page header img.logo {
 	float: right;
 	padding: 5px;
 	margin: 5px;
+}
+body.page header img.sc {
+	float: right;
+	padding: 5px;
+	margin: 5px;
+	width:80px;
+	border:1px solid #666;
 }
 
 body.page header nav ul {
@@ -73,28 +80,29 @@ body.page section {
 	color: #000;
 	margin-top: 5em;
 	margin-bottom: 10em;
+	width:100%;
 }
 
 body.page section article {
-	margin: 10px 20px;	/*padding: 10px;*/
+	margin: 0px;	/*padding: 10px;*/
+	padding:2em;
+	margin-left:2em;
 	padding-top: 2em;
 	border-bottom: 1px dotted #777;	/*border-left:1px dotted #777;*/
+	background-color:#eee;
 }
 
 body.page section article:last-child {
 	margin-bottom: 60px;
 }
 
-body.page section article:first-child {
-	padding: 10px;
-}
-
 body.page section article figure {
     display:block;
-	margin: 1em 20%;
+    text-align: center;
+	margin: 1em 25%;
 	text-align: center;
 	border:1px dotted #ddd;
-    width:400px;
+    width:45%;
 	padding:1em;
 }
 body.page section article figure.landscape {
@@ -118,7 +126,7 @@ body.page section article figure img.screenshot {
     display:block;
 	padding: 0px;
 	margin:0px;
-	width: 400px;
+	width: 100%;
 	box-shadow: 4px 4px 8px #333;
 }
 body.page section article figure.console {
@@ -245,6 +253,7 @@ body.page section article div.tags {
 	float: right;
 	display: inline;
 	margin-right: 2em;
+	margin-top:1.5em;
 }
 
 body.page section article div.author {
@@ -253,6 +262,10 @@ body.page section article div.author {
 	color: #fff;
 	padding: 2px 4px;
 	margin-right: 4px;
+	margin-top:1.5em;
+	border-radius: 4px;
+	border-left:16px solid #999;
+	border-right:16px solid #999;
 }
 
 body.page section article div.tags span {
@@ -261,6 +274,20 @@ body.page section article div.tags span {
 	padding: 2px 4px;
 	margin-left: 4px;
 	font: 10pt monospace;
+	border-radius: 4px;
+	border-left:12px solid #999;
+}
+body.page section article div.tags span.project {
+	border-left:12px solid #f00;
+}
+body.page section article div.tags span.type {
+	border-left:12px solid #090;
+}
+body.page section article div.tags span.component {
+	border-left:12px solid #009;
+}
+body.page section article div.tags span.news {
+	border-left:12px solid #FA3;
 }
 
 body.page footer {
@@ -268,8 +295,8 @@ body.page footer {
 	text-align: center;
 	display: block;
 	height: 32px;
-	width: 60%;
-	min-width: 800px;
+	width: 90%;
+	min-width: 1024px;
 	bottom: 0px;
 	padding: 10px;
 	background-color: #000;
