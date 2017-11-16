@@ -6,7 +6,7 @@ html>* {
 
 body {
 	margin: 0px 5%;
-	min-width: 1024px;
+	min-width: 500px;
    counter-reset: figs;
 }
 
@@ -14,7 +14,7 @@ body.page header {
 	position: fixed;
 	top: 0px;
 	width: 90%;
-	min-width: 1024px;
+	min-width: 550px;
 	background-color: #000;
 	color: #fff;
 	padding: 10px 20px;
@@ -80,7 +80,8 @@ body.page section {
 	color: #000;
 	margin-top: 5em;
 	margin-bottom: 10em;
-	width:100%;
+	width:auto;
+	min-width:400px;
 }
 
 body.page section article {
@@ -296,7 +297,7 @@ body.page footer {
 	display: block;
 	height: 32px;
 	width: 90%;
-	min-width: 1024px;
+	min-width: 550px;
 	bottom: 0px;
 	padding: 10px;
 	background-color: #000;
