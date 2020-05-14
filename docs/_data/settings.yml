@@ -1,4 +1,5 @@
 # Change 'comments' to true for Disqus comments
+
 disqus:
   comments: false
   disqus_shortname: 'snapgames'
