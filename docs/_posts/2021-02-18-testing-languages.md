@@ -12,7 +12,7 @@ image: languages.jpg
 For months now, I am developping some basic layers for a futur light 2D platform framework.
 Started on Java, have a try on Javascript, and latest try on the Lua LÖVE platform, I am testing the options.
 
-But any language or platform I will choosen the structure of the framework remains the same:
+But any language or platform I will choose, the structure of the framework remains the same:
 
 ```text
 GAME
