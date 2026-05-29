@@ -4,7 +4,7 @@ title: "Testing Languages"
 author: "McG."
 categories: facts
 tags: [story]
-image: languages.jpg
+image: arcade-2.jpg
 ---
 
 ## Choosing the right language
